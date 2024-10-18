@@ -47,4 +47,4 @@ import requests
 #fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 fruityvice_response = {'name': 'Watermelon', 'id': 25, 'family': 'Cucurbitacea', 'order': 'Cucurbitales'}
 #st.text(fruityvice_response)
-fv.df = st.dataframe(data=fruityvice_response, use_container_width=True)
+fv_df = st.dataframe(data=fruityvice_response, use_container_width=True)

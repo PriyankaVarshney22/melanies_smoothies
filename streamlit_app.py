@@ -30,7 +30,8 @@ if ingredients_list:
     for fruit_chosen in ingredients_list:
         ingredients_string += fruit_chosen + ' '
         st.subheader(fruit_chosen + ' Nutrition Information')
-        fruityvice_response = ({'name': 'Watermelon', 'id': 25, 'family': 'Cucurbitacea', 'order': 'Cucurbitales'} + fruit_chosen)
+        fruityvice_response_basic = {'name': 'Watermelon', 'id': 25, 'family': 'Cucurbitacea', 'order': 'Cucurbitales'}
+        fruityvice_response = (fruityvice_response_basic + fruit_chosen)
         fv_df = st.dataframe(data=fruityvice_response, use_container_width=True)
         
     #st.write(ingredients_string)

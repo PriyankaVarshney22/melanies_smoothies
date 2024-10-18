@@ -45,5 +45,6 @@ if ingredients_list:
 #New section to display fruityvice nutrition information
 import requests
 #fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-#fruityvice_response = {'name': 'Watermelon', 'id': 25, 'family': 'Cucurbitacea', 'order': 'Cucurbitales'}
+fruityvice_response = {'name': 'Watermelon', 'id': 25, 'family': 'Cucurbitacea', 'order': 'Cucurbitales'}
 #st.text(fruityvice_response)
+fv.df = st.dataframe(dat=fruityvice_response.json(), use_container_width=True)
